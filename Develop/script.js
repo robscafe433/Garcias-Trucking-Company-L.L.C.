@@ -1,11 +1,13 @@
-const employee = { firstName: ' ', lastName: ' ', salary: 0 };
 const employees = [];
+
+//had initially declared totalSalaries as a const, but browser console gave  me error message as I was trying to change it with the line code ( totalSalaries += employeesArray[i].salary; *so changed it to let.)
 
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
 const collectEmployees = function () {
+    const employee = { firstName: ' ', lastName: ' ', salary: 0 };
     // TODO: Get user input to create and return an array of employee objects
     employee.firstName = prompt('Enter  employee first name: ');
     console.log(employee.firstName);
@@ -20,8 +22,26 @@ const collectEmployees = function () {
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
+    let totalSalaries = 0;
+    let averageSalary = 0;
     // TODO: Calculate and display the average salary
-    const averageSalary = emplo;
+
+    for (let i = 0; i < employeesArray.length; i++) {
+        totalSalaries += parseInt(employeesArray[i].salary);
+    }
+
+    //  Left of here - ***********************************************
+    console.log('num in employeesArray: ', employeesArray.length);
+    console.log('total  salaries:', totalSalaries);
+    console.log('TypeOf is: ', typeof totalSalaries);
+    console.log(
+        'employee lenght typeof: ',
+        typeof employeesArray.length,
+        'And num amount is: ',
+        employeesArray.length
+    );
+    averageSalary = totalSalaries / employeesArray.length;
+    console.log('Average salary is: let averageSalary = ;', averageSalary);
 };
 
 // Select a random employee
