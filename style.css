@@ -15,7 +15,7 @@
 Company L.L.C. */
 
 .background-pic {
-  background-image: url("../trucking.jpg");
+  background-image: url("./trucking.jpg");
   background-size: 50%;
 
 }
