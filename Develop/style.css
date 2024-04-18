@@ -1,3 +1,5 @@
+/* created a global root variable */
+
 :root {
   --background: #e7e9eb;
 }
@@ -8,6 +10,9 @@
 *::after {
   box-sizing: border-box;
 }
+
+/* Added truck image for background to go with trucking company theme - title was Garcias Trucking 
+Company L.L.C. */
 
 .background-pic {
   background-image: url("../trucking.jpg");
@@ -62,6 +67,8 @@ h2 {
   padding: 30px 40px;
 }
 
+/* use of root variable for background color */
+
 .card-header::after {
   content: " ";
   display: block;
@@ -92,6 +99,8 @@ tbody tr:nth-child(even) {
 .card-footer {
   text-align: center;
 }
+
+/* use of root variable for background color */
 
 .card-footer::before {
   content: " ";
@@ -130,6 +139,7 @@ button[disabled] {
   float: right;
 }
 
+/* media queries for mobile responsive */
 
 @media (max-width: 690px) {
   .btn {
