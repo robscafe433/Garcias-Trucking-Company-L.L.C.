@@ -1,3 +1,8 @@
+:root {
+  --background: #e7e9eb;
+}
+
+
 *,
 *::before,
 *::after {
@@ -61,7 +66,7 @@ h2 {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: var(--background);
   height: 2px;
 }
 
@@ -92,7 +97,7 @@ tbody tr:nth-child(even) {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: var(--background);
   height: 2px;
 }
 
