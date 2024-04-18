@@ -14,13 +14,13 @@ const collectEmployees = function () {
         const employee = { firstName: ' ', lastName: ' ', salary: 0 };
         // TODO: Get user input to create and return an array of employee objects
         employee.firstName = prompt('Enter  employee first name: ');
-        console.log(employee.firstName);
+        // console.log(employee.firstName);
         employee.lastName = prompt('Enter employee last name: ');
-        console.log(employee.lastName);
+        // console.log(employee.lastName);
         employee.salary = prompt('Enter  employee salary: ');
-        console.log(employee.salary);
+        // console.log(employee.salary);
         employees.push(employee);
-        console.log(employees);
+        // console.log(employees);
         keepEnteringData = confirm('Enter another employee?');
     }
     return employees;
@@ -36,15 +36,10 @@ const displayAverageSalary = function (employeesArray) {
         totalSalaries += parseInt(employeesArray[i].salary);
     }
 
-    console.log('num in employeesArray: ', employeesArray.length);
-    console.log('total  salaries:', totalSalaries);
-    console.log('TypeOf is: ', typeof totalSalaries);
-    console.log(
-        'employee lenght typeof: ',
-        typeof employeesArray.length,
-        'And num amount is: ',
-        employeesArray.length
-    );
+    // console.log('num in employeesArray: ', employeesArray.length);
+    // console.log('total  salaries:', totalSalaries);
+    // console.log('TypeOf is: ', typeof totalSalaries);
+
     averageSalary = (totalSalaries / employeesArray.length).toFixed(2);
     console.log('Average salary is: let averageSalary = ;', averageSalary);
 };
@@ -53,7 +48,7 @@ const displayAverageSalary = function (employeesArray) {
 const getRandomEmployee = function (employeesArray) {
     // TODO: Select and display a random employee
     let randomNum = Math.floor(Math.random() * employeesArray.length);
-    console.log('Random Num : ', randomNum);
+    // console.log('Random Num : ', randomNum);
     console.log(
         'Displaying an employee at random: ',
         employeesArray[randomNum].firstName +
