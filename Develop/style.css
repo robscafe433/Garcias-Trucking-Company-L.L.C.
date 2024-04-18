@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.background-pic {
+  background-image: url("../trucking.jpg");
+  background-size: 50%;
+
+}
+
 html,
 body,
 .wrapper {
@@ -30,8 +36,13 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+h1 {
+  color: white;
+}
+
 h2 {
   text-align: center;
+  color: black;
 }
 
 .card {
@@ -59,14 +70,14 @@ h2 {
 }
 
 table {
-  width:100%;
+  width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
 }
 
-td{
+td {
   text-align: center;
-  border:4px solid black;
+  border: 4px solid black;
 }
 
 tbody tr:nth-child(even) {
@@ -94,8 +105,7 @@ tbody tr:nth-child(even) {
 .btn {
   border: none;
   background-color: hsl(223, 74%, 48%);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
