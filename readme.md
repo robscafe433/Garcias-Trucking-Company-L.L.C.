@@ -19,9 +19,9 @@ I learned how implementing the use of the following functions:
 
 ## Usage
 
-github pages url: 
+github pages url: https://robscafe433.github.io/Garcias-Trucking-Company-L.L.C./
 
-Github repository: 
+Github repository: https://github.com/robscafe433/Garcias-Trucking-Company-L.L.C.
 
 
 Webpage Screenshot:
